@@ -37,7 +37,9 @@ body{
   line-height:1.65;
   -webkit-font-smoothing:antialiased;
 }
-img{max-width:100%;display:block}
+/* height:auto is load-bearing — without it the width/height attributes on
+   hank.jpg and turbine-cover.jpg are taken literally and the images squash. */
+img{max-width:100%;height:auto;display:block}
 a{color:var(--brass-bright)}
 
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
